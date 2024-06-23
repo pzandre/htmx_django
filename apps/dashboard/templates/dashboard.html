@@ -7,7 +7,7 @@
       <h2>Dashboard Content</h2>
       <div id="dashboard-alerts"></div>
       <p>This is the dashboard content.</p>
-      <button hx-get="{% url 'dashboard:refresh' %}"
+      <button hx-post="{% url 'dashboard:refresh' %}"
         hx-target="#dashboard-alerts"
         hx-swap="outerHTML"
         hx-indicator="#dashboard-alerts"
